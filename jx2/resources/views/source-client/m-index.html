@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Trang chủ</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-css/bootstrap.min.css">
+	<style type="text/css">
+		a {color:#F5F6F7!important;}
+		.navbar-nav a:focus{background:#dcdcdc;color:black!important;border-radius: 5px;}
+		.dropdown-menu a{ color: #0D1011!important; }
+		.jumbotron { background: #AA87B8!important; margin-bottom:1rem;}
+		.footer {background:#0D1011;height:3rem;color:#a8a8a8;}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light navbar-fluid" style="background:#563D7C;">
+		  <a class="navbar-brand" href="m-index.html">Jx2 - Võ lâm 2</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#demo">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse mt-2" id="demo"  style="border-top:1px solid #490761;">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#">Sơn Trang</a>
+		      	</li>
+		      	<li class="nav-item dropdown" >
+    				<a class="nav-link dropdown-toggle submenu" data-toggle="dropdown" href="#" role="button">Bài Viết</a>
+    				<div class="dropdown-menu bg-light">
+				      	<a class="dropdown-item" href="#">Đăng bài mới</a>
+				      	<a class="dropdown-item" href="#">Tuyển kèo</a>
+      					<a class="dropdown-item" href="#">Bài viết đã đăng</a>
+      				</div>
+  				</li>
+		    </ul>
+		      <a href="login.html" class="btn btn-primary d-block m-2" style="color:#dcdcdc">Đăng Nhập</a>
+		      <a href="register.html" class="btn btn-success d-block m-2">Đăng Ký</a>
+		  </div>
+		</nav>
+		<div class="jumbotron rounded-0">
+			<h1 class="display-6">Hello, world!</h1>
+			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+			<hr class="m-y-md">
+			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+			<p class="lead">
+				<a class="btn btn-primary btn-sm" href="#more" role="button" data-toggle="collapse">Learn more</a>
+			</p>
+			<div class="collapse" id="more">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div class="footer text-center p-2">
+			<span>Copyright &copy; HTT</span>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="js/bootstrap-js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".submenu").click(function(){
+				$(".dropdown-menu").slideToggle(400);
+			});
+					
+		})
+	</script>
+</body>
+</html>

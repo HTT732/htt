@@ -1,0 +1,468 @@
+ * {box-sizing: border-box;}
+body { 
+	background: url("../image/bgt.jpg");
+}
+.logo {
+	background:url("../image/sontrangt.jpg") no-repeat center center;
+	background-size:100% 100%;
+	width:100%;
+	height:200px;
+	-webkit-box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+	box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+}
+.header .row {
+	margin:2rem 0;
+	background-size:cover;
+	-webkit-box-shadow: inset 0px 0px 34px 16px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 34px 16px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 34px 16px rgba(0,0,0,0.75);
+}
+#tin-tuc-noi-bat {
+	padding: 3px;
+}
+#tin-tuc-noi-bat .card-header {
+	background: #2C5364;
+	border-radius: 0;
+	background: #0F2027; 
+	background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	color: #EA9515;
+
+}
+#tin-tuc-noi-bat .card-body {
+	padding: 0 20px;
+	/*background: #E0EAFC;
+	background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC); 
+	background: linear-gradient(to right, #CFDEF3, #E0EAFC); */
+	background: url('../image/background/tnb2.jpg') no-repeat center;
+	background-size: cover;
+
+}
+#tin-tuc-noi-bat .card-body .card-text {
+	/*margin-left: 20px;*/
+}
+#tin-tuc-noi-bat .card-body .card-text:first-child {
+	margin-top: 7px;
+}
+#tin-tuc-noi-bat .card-body .card-text:last-child {
+	margin-bottom: 7px;
+}
+
+#tin-tuc-noi-bat a{
+	color: #000;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+#slide {
+	padding: 3px 0;
+
+}
+#slide .carousel-item img {
+	height:300px;
+}
+
+.content .form-inline input {
+	-webkit-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 25px 2px rgba(0,0,0,0.75);
+	border:0;
+}
+.content .form-inline input:focus {
+	-webkit-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 15px 3px rgba(0,0,0,0.75);
+}
+ .posts {
+	background:#f2f2f2;
+	padding-bottom:5px;
+}
+.posts .col {
+	padding:10px 3px;
+} 
+.posts .content-left .card {
+	border-radius: 0;
+	border:1px solid #193735;
+	height:100%;
+	color:#CD950C;
+	transition:0.1s all;
+}
+.posts .content-left .card:hover {
+	-webkit-box-shadow: 0px 0px 9px 2px rgba(255,0,0,1);
+	-moz-box-shadow: 0px 0px 9px 2px rgba(255,0,0,1);
+	box-shadow: 0px 0px 9px 2px rgba(255,0,0,1);
+	transition:0.4s all;
+}
+.posts .content-left .card .img {
+	height:10rem;
+	overflow: hidden;
+	border:4px solid #193735;
+	background:#102222;
+}
+.posts .content-left .card .img img{
+	cursor: pointer;
+	border-radius: 0;
+	height: 100%;
+	width: auto;
+	text-align:center;
+}
+.posts .content-left .card .card-body {
+	background:#262D35;
+	padding:8px 0px 0px 0px;
+}
+.posts .content-left .card .card-body .top-info{
+	background:#FFF68F;
+	padding: 5px 10px;
+	background:url('../image/nen.jpg') center center no-repeat;
+	background-size:cover;
+}
+.posts .content-left .card .card-body .top-info .info span:nth-child(1) a{
+	text-decoration:none;
+	transition:0.3s all;
+}
+.posts .content-left .card .card-body .top-info .info span:nth-child(1) a:hover{
+	text-shadow: 4px 2px 4px rgba(150, 150, 150, 1);
+	color:blue;
+}
+.posts .content-left .card .card-body .top-info .view-and-like {
+	font-size: 0.9rem;
+}
+.posts .content-left .card .card-body .body-content{
+	height:79px;
+	overflow: hidden;
+	margin:0 0 10px 5px;
+	padding-bottom:5px;
+}
+.posts .content-left .card .card-body .fas{
+	color:#1C1C1C;
+	margin:0 7px 0 0;
+	font-weight: 600;
+}
+.posts .content-left .card .card-body  span{
+	color:#cc3333;
+	font-weight:600;
+}
+.posts .content-left .card .card-body .top-info .lienhe {
+	z-index: 10;
+	position:absolute;
+	top:46px;
+	border:1px solid #dcdcdc;
+}
+.posts .content-left .card .card-body .top-info button {
+	font-weight:600;
+}
+.posts .content-left .card .card-body .top-info .lienhe .card-body{
+	background:#ccffcc;
+	color:#1C1C1C;
+	padding: 0.5rem 1rem;
+}
+.posts .content-left .card .card-body span {
+	padding:2px 0;
+}
+.posts .content-left .card .card-body h4{
+	text-decoration: none;
+	color:#FFA500;
+	font-size:1.1rem;
+	cursor:pointer;
+	margin:0;
+}
+.posts .content-left .card .card-body h4:hover{
+	color:#FF7F00;
+}
+.posts .content-left .card .card-footer {
+	padding:2px;
+}
+.posts .modal .modal-title {
+	background:url('../image/jx2-lg.gif') no-repeat;
+	width:123px;
+	height:35px;
+	background-size:100% 100%;
+}
+.posts .modal .modal-body img{
+	max-width:100%;
+	height:auto;
+	cursor:zoom-in;
+	margin:5px 0;
+}
+.posts .modal .modal-footer {
+	padding:8px;
+}
+.posts .modal .modal-footer .form-inline {
+	padding:8px;
+	margin:0 auto;
+}
+.posts .modal-footer .like-footer {
+	background:url('../image/like.png') no-repeat;
+	background-size:100%; 
+	width:35px; 
+	height:35px;
+	cursor:pointer;
+	margin:0 5px;
+}
+.posts .content-right {
+	border-left:1px solid #dcd;
+	margin-top:18px;
+	padding: 0 5px;
+}
+.posts .content-right .card{
+	height:200px;
+	margin-bottom:0.5rem;
+	padding: 0;
+}
+.posts .content-right .card .card-header {
+	padding: 5px 1.3rem;
+	background:#FFF68F;
+	font-weight:500;
+}
+
+/*bai viet duoc xem nhieu*/
+.posts .content-right .card .card-body {
+	padding: 5px 1rem;
+	overflow: hidden;
+}
+.posts .content-right .card .card-body .truncate{
+	margin:2px 0;
+	overflow: hidden;
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
+	color:green;
+}
+.posts .content-right .card .card-body .truncate a{
+	color:#993366;
+	margin-left:2px;
+}
+/*thanh vien tich cuc*/
+.posts .content-right .member-pro .member {clear:both;}
+.posts .content-right .member-pro .card-body {
+	overflow: auto;
+	margin:3px 0;
+}
+.posts .content-right .card .member .info-member {
+	float:left;
+	line-height:20px;
+	padding-left:5px;
+}
+.posts .content-right .card .member .info-member span {
+	font-size:14px;
+}
+.posts .content-right .card .member .info-member a {
+	text-decoration:none;
+	color:#993366;
+}
+.posts .content-right .card .member .info-member a:hover {
+	text-decoration:none;
+	color:blue;
+}
+.posts .content-right .card .member .avatar {
+	margin:2px 0;
+	width:40px;
+	height:40px;
+	float:left;
+	border:1px solid #a8a8a8;
+	cursor:pointer;
+}
+
+.top {
+	padding:0 1.3rem;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background:#f2f2f2;
+}
+
+.content {
+	-webkit-box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	margin:1rem 0;
+}
+.content .navbar-brand {
+	width:120px;
+	height:30px;
+	opacity: 0.7;
+	background:url("../image/vua.png") no-repeat;
+	background-size:100% 100%;
+}
+.content .navbar-brand:hover {
+	opacity: 1;
+}
+.content nav {
+	background:url("../image/headt.jpg") center no-repeat;
+	padding:0 1rem;
+}
+.content nav div a {
+	width:130px;
+	height:50px;
+	opacity: 0.6;
+}
+.content nav div a:nth-child(1) {
+	background:url("../image/account.png") bottom no-repeat;text-align:center;
+}
+/*.content nav div a:nth-child(2) {
+	background:url("../image/item.png") bottom no-repeat;text-align:center;
+}*/
+.content nav div a:nth-child(2) {
+	background:url("../image/tintuc.png") bottom no-repeat;text-align:center;
+}
+.content nav div a:hover {
+	opacity: 1;
+	background-position: top;
+}
+
+.footer {
+	-webkit-box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	box-shadow: 1px -3px 23px 8px rgba(0,0,0,0.75);
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	color:#a8a8a8;
+}
+/*My class font-awesome*/
+.my-vang, .my-vnd {
+	width:24px;
+	height:14px;
+	background-size:24px!important;
+	opacity: 0.8;
+}
+.my-vang {
+	background:url("../image/gold-sm.png") no-repeat;
+}
+.my-vnd {
+	background: url('../image/vnd.png') no-repeat;
+}
+.my-xu {
+	background: url('../image/xu.png') no-repeat;
+	height: 20px;
+	width: 20px;
+	background-size: 20px 20px;
+}
+.my-active {
+	opacity: 1;
+}
+
+/*---------------------- reponsive---------------------------*/
+/*reponsive thong tin lien he*/
+@media screen and (min-width:300px) and (max-width:1192px){
+	.posts .card .card-body .top-info .lienhe {
+		top:54px;
+	}
+}
+
+/*reponsive, custom Slide and Tin tức nổi bật*/
+@media (max-width: 992px) {
+	.header .row {
+		margin:2rem 0;
+		-webkit-box-shadow: 0px 0px!important;
+		-moz-box-shadow: 0px 0px!important;
+		box-shadow: 0px 0px!important;
+	}
+	#slide {
+		padding: 0;
+		margin-bottom: 10px;
+		border: 1px solid black;
+		-webkit-box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+		-moz-box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+		box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+
+	}
+	#slide .carousel-item img {
+		width:100%;
+		height: auto;
+	}
+	#tin-tuc-noi-bat {
+		padding:0;
+		margin-top: 12px;
+		margin-bottom: 10px;
+		-webkit-box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+		-moz-box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+		box-shadow: -1px 7px 16px 0px rgba(0,0,0,0.83);
+	}
+}
+@media (max-width: 768px) {
+	.header .row {
+		margin-top:15px!important;
+	}
+	.logo {
+		background-size:cover;
+		width:100%;
+		height:100px;
+		-webkit-box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+		box-shadow: 1px 10px 32px 5px rgba(0,0,0,0.75);
+	}
+}
+
+@media (max-width: 578px) {
+	.top {
+		display: block!important;
+		height: auto;
+		line-height: 40px;
+	}
+
+}
+
+@media (max-width: 360px) {
+	.top .right .mr-1 { margin: 0;}
+}
+/*End reponsive thong tin lien he*/
+
+/*reponsive .posts .col {*/
+
+/*End reponsive .posts .col {*/
+
+.scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.icon-admin {
+	background: url('../image/icon/dau-new.png') no-repeat center;
+	width: 70px;
+	height: 61px;
+	background-size: 70px 61px;
+	position: absolute;
+	right: 0;
+	z-index: 100;
+}
+
+.productStatus {
+	background-color: #f2f2f2;
+	padding-left: 20px;
+	display: none;
+}
+.productStatus a {
+	text-decoration: none;
+	color:#fff;
+}
+.productStatus kbd {
+	cursor: pointer;
+}
+.productStatus kbd:hover {color:red;}
+.productStatus span {
+	-webkit-animation-name: prdspan;
+    -webkit-animation-duration: 2s;
+    animation-name: prdspan;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes prdspan {
+    0%   {background-color: red;}
+    25%  {background-color: #FF8C00;}
+    50%  {background-color: blue;}
+    75%  {background-color: #8A2BE2;}
+    100% {background-color: green;}
+}

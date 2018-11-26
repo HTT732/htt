@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="ckeditor/ckeditor.js"></script>
+	
+	<title>Admin</title>
+</head>
+<body>
+	<div class="container-full">
+		<header>
+			<nav class="navbar">
+				<button id="btnMenu" class="btn btn-dark">
+					<i class="fas fa-bars fa-2x"></i>
+				</button>
+				<a href="#" class="navbar-brand">Admin HTT</a>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+			</nav>
+		</header>
+		<div class="row">
+			<!-- Menu quản lý -->
+			<div id="menu" class="col col-9 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+				<div class="row flex-column">
+					<div class="accordion " id="card-menu">
+						<!-- Link -->
+						<div class="card ">
+							<div class="card-header ">
+								<div data-toggle="collapse" data-target="#ql_sanpham">
+									<span><i class="fas fa-cart-arrow-down"></i>Quản lý sản phẩm</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_sanpham" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="sanpham.html"><i class="fas fa-angle-double-right"></i>Danh sách sản phẩm</a>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_baiviet">
+									<span><i class="fas fa-feather-alt"></i>Quản lý bài viết</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_baiviet" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="baiviet.html"><i class="fas fa-angle-double-right"></i>Danh sách bài viết</a>
+										</li>
+										<li>
+											<a href="baiviet.html"><i class="fas fa-angle-double-right"></i>Thêm bài viết</a>
+										</li>
+										<li>
+											<a href="baiviet.html"><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit.</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_slider">
+									<span><i class="fas fa-sliders-h"></i>Quản lý slider</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_slider" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="slide.html"><i class="fas fa-angle-double-right"></i>Danh sách slide</a>
+										</li>
+										<li>
+											<a href="slide.html"><i class="fas fa-angle-double-right"></i>Thêm slider</a>
+										</li>
+										<li>
+											<a href="slide.html"><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit.</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_thanhvien">
+									<span><i class="fas fa-user"></i>Quản lý thành viên</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_thanhvien" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="user.html"><i class="fas fa-angle-double-right"></i>Danh sách thành viên</a>
+										</li>
+										<li>
+											<a href="user.html"><i class="fas fa-angle-double-right"></i>Thêm thành viên</a>
+										</li>
+										<li>
+											<a href="user.html"><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit.</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_comment">
+									<span><i class="fas fa-comments"></i>Quản lý comment</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_comment" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="comment.html"><i class="fas fa-angle-double-right"></i>Danh sách comment</a>
+										</li>
+										<li>
+											<a href="comment.html"><i class="fas fa-angle-double-right"></i>Lọc comment</a>
+										</li>
+										<li>
+											<a href="comment.html"><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit.</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_tinnhan">
+									<span><i class="fas fa-envelope"></i>Quản lý tin nhắn</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_tinnhan" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="message.html"><i class="fas fa-angle-double-right"></i>Danh sách tin nhắn</a>
+										</li>
+										<li>
+											<a href="message.html"><i class="fas fa-angle-double-right"></i>Thêm tin nhắn</a>
+										</li>
+										<li>
+											<a href="message.html"><i class="fas fa-angle-double-right"></i>Lorem ipsum dolor sit.</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+
+						<!-- Link -->
+						<div class="card">
+							<div class="card-header">
+								<div data-toggle="collapse" data-target="#ql_thongke">
+									<span><i class="fas fa-signal"></i>Quản lý thống kê</span>
+									<i class="fas fa-caret-right"></i>
+								</div>
+							</div>
+							<!-- Sub link -->
+							<div id="ql_thongke" class="collapse" data-parent="#card-menu">
+								<div class="card-body">
+									<ul class="nav">
+										<li>
+											<a href="thongke.html"><i class="fas fa-angle-double-right"></i>Số lượng Like</a>
+										</li>
+										<li>
+											<a href="thongke.html"><i class="fas fa-angle-double-right"></i>Số lượng comment</a>
+										</li>
+										<li>
+											<a href="thongke.html"><i class="fas fa-angle-double-right"></i>Số lượng xem</a>
+										</li>
+										<li>
+											<a href="thongke.html"><i class="fas fa-angle-double-right"></i>Thống kê IP</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- End sub link -->
+						</div>
+						<!-- End link -->
+					</div>
+				</div>
+			</div>
+			<!-- End menu -->
+			<!-- Content -->
+			<div id="content" class="col-12 col-lg-9 col-xl-10">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Quản lý sản phẩm</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Danh sách sản phẩm</li>
+					</ol>
+				</nav>
+				<div class="table-responsive-sm">
+					<button data-target="#modalThemSanPham" data-toggle="modal" class="btn btn-primary btn-outline-primary mb-1 float-md-right"><i class="fas fa-plus mr-1"></i>Thêm sản phẩm</button>
+					<div class="modal" id="modalThemSanPham" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Thêm sản phẩm</h4>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										<span class="sr-only">Close</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<label>Server</label>
+											<select class="form-control ">
+												<option selected>Lựa chọn</option>
+												<option>Ngọc hổ</option>
+												<option>Kim hổ</option>
+												<option>Hoàng hổ</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label>Tiêu đề</label>
+											<input type="text" name="txtTieuDe" class="form-control" placeholder="Nhập tiêu đề ...">
+										</div>
+										<div class="form-group">
+											<label class="">Nội dung</label>
+											<textarea class="form-control" rows="10" id="noiDungSanPham"></textarea>
+											<script>
+												CKEDITOR.replace('noiDungSanPham');
+											</script>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+									<button type="button" class="btn btn-primary">Thêm</button>
+									
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+					<table class="table table-striped table-bordered">
+						<caption>Danh sách sản phẩm</caption>
+						<thead class="thead-light">
+							<tr>
+								<th class="scope pr-0">
+									<span>
+										STT
+									</span>
+									<div class="float-left">
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Đăng bởi
+									<div>
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Tiêu đề
+									<div>
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Hình
+									<div>
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Lượt thích
+									<div>
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Lượt xem
+									<div>
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope">
+									Thời hạn
+									<div class="float-left">
+										<i class="fas fa-arrow-circle-up"></i>
+										<i class="fas fa-arrow-circle-down"></i>
+									</div>
+								</th>
+								<th class="scope text-center">#</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>HTT</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>AnhHungNup</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>LangTuBenHo</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Action Kament</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>zzzSieuVipzzz</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Admin</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nobis.</td>
+								<td>
+									<img src="https://via.placeholder.com/100x100">
+								</td>
+								<td>50</td>
+								<td>95</td>
+								<td>10 ngày</td>
+								<td>
+									<button class="btn btn-light btn-edit"  title="Sửa">
+										<i class="fas fa-edit"></i>
+									</button>
+									<button class="btn btn-light btn-del" title="Xóa">
+										<i class="fas fa-trash-alt" ></i>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<!-- End content -->
+		</div>
+		
+	</div>
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/my-script.js"></script>
+</body>
+</html>

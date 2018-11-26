@@ -1,0 +1,85 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 991px) {
+	#menu {
+		position: absolute;
+		left:-350px;
+		z-index: 10;
+	}
+	#btnMenu {
+		display: block!important;
+	}
+	#content {
+		margin-left: 0!important;
+	}
+}
+@media (min-width: 992px) {
+	#menu {
+		left:0px!important;
+	}
+}
+
+.row {margin: 0;}
+/*Header*/
+header nav {
+	border-bottom: 2px solid #FF9900;
+	background-color: #000022;
+}
+header nav a { color: #FF9900; }
+/*End header*/
+
+/*Menu*/
+#menu {padding: 0;color: #FF9900;}
+#menu .card {background-color: #000022; border-radius: 0;}
+#menu .card-header {cursor: pointer;}
+#menu .card-body {background: #FFFF66; padding: 0;}
+#menu .card-body li { width: 100%; padding: 5px 0 5px 23px; cursor: pointer;}
+#menu .card-body li a{ text-decoration: none; color: #000;}
+#menu .fas { margin-right: 5px; }
+#menu .fa-caret-right {
+	margin-top: 5px;
+	float: right;
+}
+#menu .card-header:hover {
+	background-color: #000044;
+	color: #fff;
+	border-left: 3px solid #FF9900;
+}
+#menu .card-body li:hover, #menu .card-body li:hover i, #menu .card-body li:hover a {
+	background-color: #fff;
+	color: #FF6600;
+}
+/*End menu*/
+
+
+#btnMenu {display:none;}
+
+
+/*Content*/
+#content label {
+	font-weight: 600;
+	font-size: 2rem;
+	font-family: "Arial";
+}
+#content tbody button {
+	margin-bottom: 3px;
+	padding: 3px 8px;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+}
+#content tbody tr td:last-child {
+	text-align: center;
+}
+#content thead th div i:hover {
+	color: #000022;
+}
+/*End content*/
+
+/*form in modal*/
+#content .modal .modal-body form label{
+	font-size: 1rem;
+}
+
+/*End form in modal*/

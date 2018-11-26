@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Jx2 - Hoàng Thái Trung</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="image/icon/ico1.ico" type="image/x-icon" />
+	<script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+
+	<div class="container"> <!-- Container -->
+		<div class="card my-card rounded-0 mx-auto"> <!-- card -->
+			<div class="card-header rounded-0">
+				<!-- Login and register -->
+				<nav class="navbar justify-content-between p-0">
+					<!-- <label class="m-0">Jx2 - Hoàng Thái Trung</label> -->
+					<div style="height:27px;width:100px;background:url('image/jx23.png') no-repeat;opacity:0.7;background-size:100% 100%"></div>
+					<span class="label label-default">
+						<a type="button" href="login.html" class="btn btn-sm btn-login"><small><strong>Đăng nhập</strong></small></a>
+						<a type="button" href="register.html" class="btn btn-sm btn-register"><small ><strong>Đăng ký</strong></small></a>
+					    <button id="btn-close" href="#logout" class="btn btn-outline-secondary btn-sm my-sm-0" data-toggle="modal" type="button">&times;</button>
+					</span>
+				</nav>
+				<!--Modal Logout -->
+				<div class="modal fade " id="logout">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Đại hiệp muốn rời khỏi đây sao !</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									<span class="sr-only">Close</span>
+								</button>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Ta có việc phải làm.</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Không</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+				<!-- End modal logout -->
+			</div>
+			<div class="card-body my-card-body p-0">
+				<!-- chay ngang man hinh -->
+				<div class="marquee col col-8 mx-auto mt-4" style="background:#DCD9BB;opacity: 0.4;height:22px;">
+				</div>
+				<div class="marquee col col-8 mx-auto" style="margin-top:-23px">
+					<marquee style="color:blue;font-weight: bold;opacity: 0.8;">Cung nghênh đại hiệp đến với Jx2 - HTT.</marquee>
+				</div>
+
+				<!-- Quản lý bài viết -->
+				<div class="p-0 col-md-11 mx-auto" >
+					<div class="card baiviet" data-hidden="all">
+						<div class="card-header navbar justify-content-between pb-0">
+							<ul class="nav nav-tabs border-0" role="tablist">
+								<li class="nav-item mx-1" >
+									<a href="" id="control-baiviet" role="tab" class="nav-link active" data-toggle="tab">Bài viết đã đăng</a>
+								</li>
+								<li class="nav-item" id="control-dangbai">
+									<a href="" class="nav-link " data-toggle="tab">Đăng bài</a>
+								</li>
+							</ul>
+							<button class="btn btn-outline-secondary btn-sm btn-close-control">&times;</button>
+						</div>	
+						<div id="scroll" class="card-body">
+							<!-- <p class="lead m-0"><strong><small>Không có bài viết nào.</small></strong></p> -->
+							<div class="noidungbaiviet row m-0" >
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="image/kiemhiep.jpg" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>10</span>
+											</div>
+											<div class="form-inline float-right">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>5</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											Lorem ipsum dolor sit ame ex quibusdam delectus ad iure eaque eveniet ipsam culp
+											Lorem ipsum dolor sit amet,
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/21151610_1230042847141586_3946589155809284485_n.jpg?oh=6064ec91cb3a8697c5c92e585aa7d832&oe=5A2E8EBB" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view" title="Lượt xem">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>2000</span>
+											</div>
+											<div class="form-inline float-right" title="Thích">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>1679</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/20842020_1953333168288156_9803856890973713_n.jpg?oh=142edda9c9e93513a583506c66d5c019&oe=5A27F2B2"" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>20000</span>
+											</div>
+											<div class="form-inline float-right">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>2000</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											Lorem ipsum dolor sit ame ex quibusdam delectus ad iure eaque eveniet ipsam culp
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/20842020_1953333168288156_9803856890973713_n.jpg?oh=142edda9c9e93513a583506c66d5c019&oe=5A27F2B2"" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>500</span>
+											</div>
+											<div class="form-inline float-right">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>234</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											Lorem ipsum dolor sit ame ex quibusdam delectus ad iure eaque eveniet ipsam culp
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, totam!
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/20842020_1953333168288156_9803856890973713_n.jpg?oh=142edda9c9e93513a583506c66d5c019&oe=5A27F2B2"" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>3</span>
+											</div>
+											<div class="form-inline float-right">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>203</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											Lorem ipsum dolor sit ame ex quibusdam delectus ad iure eaque eveniet ipsam culp
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+								<div class="col col-4 col-md-4 col-lg-3">
+									<div class="card">
+										<a href="#detail" data-toggle="modal"><img class="card-img-top img-fluid" src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.0-9/20842020_1953333168288156_9803856890973713_n.jpg?oh=142edda9c9e93513a583506c66d5c019&oe=5A27F2B2"" alt="Card image cap"></a>
+										<div class="card-body">
+											<div class=" form-inline float-left">
+												
+										    	<div class="view">
+										    		<!-- chứa icon view -->
+										    	</div>
+										    	<span>200</span>
+											</div>
+											<div class="form-inline float-right">
+												
+										    	<div class="like">
+										    		<!-- chứa icon like -->
+										    	</div>
+										    	<span>200</span>
+											</div>
+											<div class="clearfix"></div>
+											
+											<h5 class="card-title mb-1"><a  data-toggle="modal" href="#detail" href="">Ngọc linh đồ vip nhất server cho ae lựa chọn</a></h5>
+											<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+											Lorem ipsum dolor sit ame ex quibusdam delectus ad iure eaque eveniet ipsam culp
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, porro?
+										</div>
+										<div class="card-footer p-1">
+											<button type="button" data-toggle="modal" data-target="#detail" class="btn btn-primary btn-sm mx-1 px-2 py-0 float-left">Chi tiết</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-del">Xóa</button>
+											<button type="button" class="float-right btn btn-outline-success mx-1 px-2 py-0 btn-sm btn-edit">Sửa</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- form phần đăng bài -->
+							<div id="dangbai" class="col-12">
+								<form>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Loại hình</strong></label>
+								      		<select class="form-control">
+								      			<option>Account</option>
+								      			<option>Vật phẩm</option>
+								      		</select>
+								    	</div>
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Server</strong></label>
+								      		<select class="form-control">
+								      			<option>Thanh long</option>
+								      			<option>Hắc hổ</option>
+								      		</select>
+								    	</div>
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Thời hạn</strong></label>
+								      		<select class="form-control">
+								      			<option>10 giờ</option>
+								      			<option>1 ngày</option>
+								      			<option>3 ngày</option>
+								      			<option>1 tuần</option>
+								      			<option>3 tuần</option>
+								      		</select>
+								      		<small class="form-text text-muted pl-1">Sau khi hết hạn, bài viết sẽ không còn được hiển thị.</small>
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="col-form-label"><strong>Tiêu đề</strong></label>
+								    	<input type="text" class="form-control" placeholder="Nhập tiêu đề">
+								    	<small class="form-text text-muted">Hãy nhập tiêu đề ngắn gọn súc tích, phần đầy đủ nội dung sẽ được trình bày ở bên dưới.</small>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="col-form-label"><strong>Nội dung chi tiết</strong></label>
+								    	<textarea id="trungabc" class="form-control" placeholder="Nhập nội dung..."></textarea>
+								    	<script type="text/javascript">CKEDITOR.replace('trungabc');</script>
+								  	</div>
+								  	<input type="file" name="" class="btn btn-outline-secondary" multiple>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label for="inputCity" class="col-form-label"><strong>Giá bán</strong></label><br>
+								      		<label class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input"> Vàng
+								      		</label>
+								      		<small class="text-muted"> ( Không nên viết <s>3k,3kv</s>. Hãy viết <u>3000</u>,<u> 5000</u> )</small>
+								      		<input type="number" class="form-control" max="100000" oninvalid>
+								    	</div>
+									    <div class="form-group col-md-4">
+									      	<label for="inputCity" class="col-form-label fade">Giá bán</label><br>
+									      	<label  class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input"> VNĐ
+									      	</label>
+									      	<small class="text-muted"> ( Không nên viết <s>300k,500k</s>. Hãy viết <u>300000</u>,<u> 500000</u> )</small>
+									      	<input type="number" class="form-control">
+									    </div>
+									    <div class="form-group col-md-4">
+									      	<label class="col-form-label fade">Khác </label><br>
+									      	<label class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input"> Khác
+									      	</label>
+									      	<small class="text-muted"> ( Nếu bán nhiều item trong một lần, hãy check vào đây )</small>
+									      	<input type="text" class="form-control text-muted" value="Tôi đã đặt giá trong nội dung bài viết" readonly>
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+								      	<label for="inputState" class="col-form-label"><strong>Fix giá</strong></label>
+							    		<div class="form-check">
+								      		<label class="form-check-label mr-2">
+								        		<input class="form-check-input" type="radio" name="trung"> Fix mạnh
+								      		</label>
+								      		<label class="form-check-label mr-2">
+								        		<input class="form-check-input" type="radio" name="trung"> Có thể thương lượng
+								      		</label>
+									      	<label class="form-check-label mr-2">
+									        	<input class="form-check-input" type="radio" name="trung"> KMC (<small class="text-muted">Không mặc cả</small>)
+									      	</label>
+								   		</div>
+								  	</div>
+							      	<label class="col-form-label"><strong>Thông tin liên hệ</strong> <small class="text-muted">( hãy cung cấp thông tin liên hệ chính xác để người mua có thể liên lạc với bạn.)</small></label>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label">SĐT</label>
+								      		<input type="tel" name="" minlength="10" maxlength="11" title="Three letter country code" class="form-control">
+							
+								    	</div>
+								    	<div class="form-group col-md-4 ">
+								      		<label class="col-form-label">Facebook</label>
+								      		<input type="text" name="" placeholder="Đường dẫn đến FB" class="form-control" autocomplete="on">
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="custom-control custom-checkbox">
+									  		<input type="checkbox" class="custom-control-input" required>
+									  		<span class="custom-control-indicator"></span>
+									  		<span class="custom-control-description">Mọi thông tin đã chính xác.</span>
+										</label>
+										<br>
+								  		<button type="submit" class="btn btn-primary my-2">Đăng bài</button>
+								  	</div>
+								</form>
+							</div>
+							<!--End form phần đăng bài -->
+
+							<!-- phần sửa bài -->
+							<div id="suabai" class="col-12" style="display:none">
+								<form>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Loại hình</strong></label>
+								      		<select class="form-control">
+								      			<option>Account</option>
+								      			<option selected>Vật phẩm</option>
+								      		</select>
+								    	</div>
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Server</strong></label>
+								      		<select class="form-control">
+								      			<option>Thanh long</option>
+								      			<option selected>Hắc hổ</option>
+								      		</select>
+								    	</div>
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label"><strong>Thời hạn</strong></label>
+								      		<select class="form-control">
+								      			<option>10 giờ</option>
+								      			<option>1 ngày</option>
+								      			<option>3 ngày</option>
+								      			<option selected>1 tuần</option>
+								      			<option>3 tuần</option>
+								      		</select>
+								      		<small class="form-text text-muted pl-1">Sau khi hết hạn, bài viết sẽ không còn được hiển thị.</small>
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="col-form-label"><strong>Tiêu đề</strong></label>
+								    	<input type="text" class="form-control" placeholder="Nhập tiêu đề" value="Bán acc đây ae">
+								    	<small class="form-text text-muted">Hãy nhập tiêu đề ngắn gọn súc tích, phần đầy đủ nội dung sẽ được trình bày ở bên dưới.</small>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="col-form-label"><strong>Nội dung chi tiết</strong></label>
+								    	<textarea id="trungabcd" class="form-control" placeholder="Nhập nội dung">Ra đi acc 500k không nuối tiêc đây</textarea>
+								    	<script type="text/javascript">CKEDITOR.replace('trungabcd');</script>
+								  	</div>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label for="inputCity" class="col-form-label"><strong>Giá bán</strong></label><br>
+								      		<label class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input"> Vàng
+								      		</label>
+								      		<small class="text-muted"> ( Không nên viết <s>3k,3kv</s>. Hãy viết <u>3000</u>,<u> 5000</u> )</small>
+								      		<input type="number" class="form-control" max="100000" oninvalid>
+								    	</div>
+									    <div class="form-group col-md-4">
+									      	<label for="inputCity" class="col-form-label fade">Giá bán</label><br>
+									      	<label  class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input" checked"> VNĐ
+									      	</label>
+									      	<small class="text-muted"> ( Không nên viết <s>300k,500k</s>. Hãy viết <u>300000</u>,<u> 500000</u> )</small>
+									      	<input type="number" class="form-control" value="500000">
+									    </div>
+									    <div class="form-group col-md-4">
+									      	<label class="col-form-label fade">Khác </label><br>
+									      	<label class="form-check-label">
+									      		<input type="radio" name="gia" class="form-check-input"> Khác
+									      	</label>
+									      	<small class="text-muted"> ( Nếu bán nhiều item trong một lần, hãy check vào đây )</small>
+									      	<input type="text" class="form-control text-muted" value="Tôi đã đặt giá trong nội dung bài viết" readonly>
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+								      	<label for="inputState" class="col-form-label"><strong>Fix giá</strong></label>
+							    		<div class="form-check">
+								      		<label class="form-check-label mr-2">
+								        		<input class="form-check-input" type="radio" name="trung"> Fix mạnh
+								      		</label>
+								      		<label class="form-check-label mr-2">
+								        		<input class="form-check-input" type="radio" name="trung" checked> Có thể thương lượng
+								      		</label>
+									      	<label class="form-check-label mr-2">
+									        	<input class="form-check-input" type="radio" name="trung"> KMC (<small class="text-muted">Không mặc cả</small>)
+									      	</label>
+								   		</div>
+								  	</div>
+							      	<label class="col-form-label"><strong>Thông tin liên hệ</strong> <small class="text-muted">( hãy cung cấp thông tin liên hệ chính xác để người mua có thể liên lạc với bạn.)</small></label>
+								  	<div class="form-row">
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label">SĐT</label>
+								      		<input type="text" name="" minlength="10" maxlength="11" title="Three letter country code" class="form-control" value="0167828843">
+
+								    	</div>
+								    	<div class="form-group col-md-4">
+								      		<label class="col-form-label">Facebook</label>
+								      		<input type="text" name="" placeholder="Đường dẫn đến FB" class="form-control" autocomplete="on" value="facebook/htt7321">
+								    	</div>
+								  	</div>
+								  	<div class="form-group">
+								    	<label class="custom-control custom-checkbox">
+									  		<input type="checkbox" class="custom-control-input" required>
+									  		<span class="custom-control-indicator"></span>
+									  		<span class="custom-control-description">Mọi thông tin đã chính xác.</span>
+										</label>
+										<br>
+								  		<button type="submit" class="btn btn-primary my-2">Lưu</button>
+								  		<button type="button" class="btn btn-primary my-2">Thoát</button>
+								  	</div>
+								</form>
+							</div>
+							<!-- End - phần sửa bài -->
+						</div>
+
+						<div class="card-footer p-1"></div>
+					</div> <!-- End card -->
+				</div>
+				<!-- End - Quản lý bài viết thành viên -->
+				<!-- nội dung chi tiết -->
+				<div class="modal fade" id="detail" role="dialog" tabindex="-1">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-2">
+								<h4 class="modal-title">Ra đi acc DGC cs9 tv 15 như hình ai có hứng thú thì inbox</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								
+							</div>
+							<div class="modal-body text-center">
+								<img src="image/kiemhiep.jpg" class="img-fluid">
+								<img src="image/kiemhiep.jpg" class="img-fluid">
+								<img src="image/kiemhiep.jpg" class="img-fluid">
+								<img src="image/kiemhiep.jpg" class="img-fluid">
+							</div>
+							<div class="modal-footer">
+							<div class="form-inline" style="margin-right:10%"> 
+								Hãy
+								<label  class="like-footer"></label>
+								 để cho ta biết đại hiệp đã ghé qua nơi đây.
+								
+							</div>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				<!-- End - nội dung chi tiết -->
+				<!-- Begin - Tao layer làm chức năng điều khiển -->
+				<div class="row">
+					
+				    <div id="nhom-chuc-nang" class="col col-4 align-self-start ml-1">
+						<div class="row">
+							<!--Begin- Phần info cá nhân -->
+							<div id="info-content" class="card card-control col-12" data-hidden="all">
+								<div class="card-header">
+									<nav class="navbar justify-content-between p-0">
+										<label class="m-0"><strong>Thông tin cá nhân</strong></label>
+									    <button class="btn btn-outline-secondary btn-close-control py-1 px-2 my-sm-0" type="button">&times;</button>
+									</nav>
+								</div>
+								<div class="card-body" >
+
+									<div id="avatar" class="mx-auto" style="background:url('image/kiemhiep.jpg') center no-repeat;">
+									</div>
+									<div id="show-info">
+										<div id="edit-name" class="form-group row">
+											<label class="col-4 p-0">Tên:</label>
+											<label class="col-8 p-0">Vô Danh</label>
+										</div>
+										<div id="edit-birth" class="form-group row">
+											<label class="col-4 p-0">Năm sinh:</label>
+											<label class="col-8 p-0">9999</label>
+										</div>
+										<div id="edit-name" class="form-group row">
+											<label class="col-4 p-0">Nơi ở: <small class="text-muted">(Tỉnh)</small></label>
+											<label class="col-8 p-0">Dương Châu</label>
+										</div>
+										<div id="edit-birth" class="form-group row">
+											<label class="col-4 p-0">Điện thoại:</label>
+											<label class="col-8 p-0">0123456789</label>
+										</div>
+										<div id="edit-birth" class="form-group row">
+											<label class="col-4 p-0">Facebook:</label>
+											<label class="col-8 p-0">facebook/abcd</label>
+										</div>
+										
+										<button class="col-2 p-0 btn btn-sm btn-outline-info float-right">Sửa</button>
+										
+									</div>
+									<div id="edit-info" class="sr-only">
+									<form>
+										<div id="add-avatar" class="btn btn-sm btn-outline-info d-block my-2">
+											<input type="file" class="mx-auto form-file">
+										</div>
+										<div id="save-name" class="form-group row">
+											<label class="col-4 p-0 col-form-label">Tên:</label>
+											<input class="col-6 p-0 form-control" value="Hoàng Thái Trung" required></input>
+										</div>
+										<div id="save-birth" class="form-group row">
+											<label class="col-4 p-0 col-form-label">Năm sinh:</label>
+											<input class="col-6 p-0 form-control" value="2000" required></input>
+										</div>
+										<div id="save-birth" class="form-group row">
+											<label class="col-4 p-0 col-form-label">Nơi ở:</label>
+											<input class="col-6 p-0 form-control" value="Kon Tum" required></input>
+										</div>
+										<div id="save-birth" class="form-group row">
+											<label class="col-4 p-0 col-form-label">Điện thoại:</label>
+											<input class="col-6 p-0 form-control" value="01678288643" required></input>
+										</div>
+										<div id="save-birth" class="form-group row">
+											<label class="col-4 p-0 col-form-label">Facebook:</label>
+											<input class="col-6 p-0 form-control " value="facebook/htt7321" required></input>
+											<label class="text-muted"> <small>* Số điện thoại và Facebook sẽ được sử dụng để liên hệ, vì vậy hãy cung cấp thông tin chính xác.</small></label>
+										</div>
+										<button id="remove" type="button" class="col-2 p-0 btn btn-sm btn-outline-secondary float-right">Hủy</button>
+										<button id="save" type="submit" class="col-2 p-0 btn btn-sm btn-outline-info float-right mx-1">Lưu</button>
+									</form>
+										
+									</div>
+								</div>
+							</div>
+							<!--End- Phần info cá nhân -->
+							
+							<!-- Begin - Phần giới thiệu page -->
+							<div id="intro-content" class="card card-control col-12" data-hidden="all">
+								<div class="card-header">
+									<nav class="navbar justify-content-between p-0">
+									<!-- <div class="text-center" style="width:100%"> -->
+										<label class="m-0"><strong>Giới thiệu</strong></label>
+										
+									<!-- </div> -->
+									    <button id="" class="btn btn-outline-secondary btn-close-control py-1 px-2 my-sm-0 " type="button">&times;</button>
+									</nav>
+								</div>
+								<div id="scroll" class="card-body">
+									<p class="title" style="color: #db5800"><strong>Jx2 - Hoàng Thái Trung</strong></p>
+										
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+											</p>
+								</div>
+							</div>
+							<!-- End - Phần giới thiệu page -->
+
+						</div> 
+				    </div>
+
+				    <div class="col align-self-center">
+						<!-- Center -->
+						
+						<div class="row">
+							<!-- Bảng giao tiếp với npc -->
+							<div class="card control-answer mx-4">
+								<div class="card-title"><strong>Võ Lâm Chí Tôn</strong></div>
+								<div class="card-body">
+									<p style="color:#db5800;">Đại hiệp, ta có thể giúp gì?</p>
+									<p>
+										<a href="posts.html">Ta muốn đến <em>Account Sơn Trang</em></a> <br>
+										<a href="item.html">Ta muốn đến <em>Doanh Trại Item</em></a> <br>
+										<a href="tintuc_giaitri.html">Ta muốn đến <em>Trà Đạo Quán</em></a> <br>
+										<p class="divider my-1"></p>
+										<a href=""><small>Ta muốn gửi lời <em>khiêu chiến</em> đến các anh hùng trong thiên hạ.</small></a>
+									</p>
+									<p><a href="javascript:void(0)" id="close-control-answer"><small><strong>Không có gì!</strong></small></a></p>
+								</div>
+							</div>
+							<!-- Kết thúc bảng giao tiếp -->
+
+					    	<div class="col align-self-start"></div>
+							<div id="control" class="col align-self-center p-0" data-toggle="tooltip" title="Võ Lâm Chí Tôn">
+							<!-- Tạo layer làm chức năng điều khiển -->
+							</div>
+							<div class="col align-self-end"></div>
+						</div>
+
+				    </div>
+				    <div class="col align-self-end"></div>
+				</div>
+
+				<!-- Nội dung phần thông báo -->
+				<div class="thongbao-background">		
+					<!-- background thông báo -->
+				</div>
+				<div id="scroll" class="thongbao-show">
+					<div style="width:230px;height:40px;background:url('image/jx2-lg-nobg.gif') no-repeat;"></div>
+					<a href="">Bạn có tin nhắn từ ban quản trị.</a>
+					tempor incididunt ut labore et dolore magna aliqua. U ea commodo
+					conslaborum.
+					<p class="text-muted">Đã đăng nhập lúc 10:01</p>
+					<a href="">Bạn có gì để bán vào hôm nay không?</a>
+					<p><strong>Thông báo:</strong> các thành viên hôm nay mua bán sẽ được giảm giá 30% ahii</p>
+				</div>
+				<div class="warning mx-4" style="position: absolute;bottom:0;color: red">
+					<label><em>* Hãy <strong>đăng nhập</strong> để sử dụng các chức năng dành cho thành viên!</em></label>
+				</div>
+				<!-- End - phần thông báo -->
+				
+			</div> 
+			<!-- End body -->
+			<!-- footer -->
+			<div class="card-footer p-0" data-check=0>
+				<ul class="nav justify-content-center">
+					<div  id="introduce" class="sub-control" title="Giới thiệu">
+						<!-- Icon giới thiệu về page -->
+					</div>
+					<div id="nhiemvu" class="sub-control">
+						<!-- Nhiệm vụ -->
+					</div>
+					<div id="info" class="sub-control" title="Cá nhân">
+						<!--Icon thông tin cá nhân -->
+					</div>
+					<div id="book" class="sub-control">
+						<!-- Nhiệm vụ -->
+					</div>
+					<div id="baiviet" class="sub-control">
+						<!-- Nhiệm vụ -->
+					</div>
+				</ul>
+			</div> 
+			<!-- End footer -->
+		</div> <!-- End card -->
+	</div>	<!-- End container -->
+	
+
+
+
+	<script src="js/jquery.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> -->
+	<script src="js/popper/popper.min.js"></script>
+	<script src="js/bootstrap-js/bootstrap.min.js"></script>
+	<script src="js/my-style.js"></script>
+</body>
+</html>

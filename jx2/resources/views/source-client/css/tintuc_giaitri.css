@@ -1,0 +1,238 @@
+* {box-sizing: border-box}
+body {background: #BCC5C1;}
+
+.container {border:1px solid blue}
+.col {padding:0;}
+
+ /* Header and menu */
+#banner {
+	background: url('../image/tintuc_giaitri/tra-dao-quan.jpg') no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+}
+#header nav {margin-top:-50px;padding:0;}
+#header .navbar-brand {
+	width:150px;	
+	height:35px;
+	background:url("../image/vua.png") no-repeat;
+	opacity: 0.8;
+	background-size:100% 100%;
+	margin:0 35px;
+}
+#header .navbar-brand:hover {
+	opacity: 1;
+}
+#top-menu ul li {padding-top:10px;}
+#top-menu ul li .nav-link{
+	width: 200px;
+	height: 32px;
+	background: url("../image/tintuc_giaitri/test.png") bottom no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	color: #f2f2f2!important;
+	padding: 3px 0 0 0;
+	font-weight: 500;
+}
+.submenu i {transition:0.5s all;}
+#top-menu ul li .nav-link:hover, 
+#top-menu ul li .nav-link:focus{
+	color: #cc0000!important;
+}
+#top-menu ul li .nav-link:focus i{
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); 
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#top-menu ul li .dropdown-menu {
+	background: #060606;
+	margin-left: 20px;
+}
+#top-menu ul li .dropdown-menu a{
+	color: #fff!important;
+	height: 30px;
+	padding-right: 0;
+	padding-left: 0;
+	text-align: center;
+}
+#top-menu ul li .dropdown-menu a:hover{
+	font-weight: 700;
+	color: #b90000!important;
+}
+/* Content */
+#content {margin-top:0.5rem;}
+#content #hiepkhach {
+	width:46px;
+	height:70px;
+	background:url('../image/tintuc_giaitri/hiepkhach-sm.gif') no-repeat;
+	background-size:auto 100%;
+	opacity: 0.9;
+	float:right;
+	margin:-70px 50px -2px 0;
+	cursor:pointer;
+}
+/* Content left */
+#content .info-top {
+	-webkit-box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.75);
+	padding: 1rem;
+	background: #660033;
+}
+.info-top .avatar {
+	width:80px;
+	height:80px;
+	border-radius: 50px;
+	border:1px solid #7D1B7E;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.info-top .name a{color:#f2f2f2;font-weight:500;}
+.info-top .progress {
+	max-width:150px;
+	margin:0.5rem auto;
+	height:13px;
+}
+.content-left .progress .progress-bar {
+	line-height: 13px;
+}
+/* Content middle */
+.content-middle .middle-top {
+	background:url('../image/tintuc_giaitri/content-middle.jpg');
+	border-radius: 3px;
+	padding: 1rem 1rem 1.3rem 1rem;
+}
+.tintuc {margin-top:1rem;}
+.tintuc h4{font-size:1.4rem;margin-bottom:5px;}
+.content-middle .tintuc:nth-child(1) {margin:0;}
+.tintuc a {text-decoration:none;transition:0.3s all;color:#b90000;}
+.tintuc a:hover {color:red;}
+.tintuc .image-intro {
+	width: 150px;
+	height: 100px;
+	border: 1px solid #dcdcdc;
+	float: left;
+	margin:0.35rem 1rem 0 0;
+	overflow: hidden;
+}
+.tintuc .image-intro img {max-width:100%;}
+.content-middle .middle-bottom {
+	background:url('../image/tintuc_giaitri/bottom-thu.jpg') no-repeat;
+	height:50px;
+}
+/* Detail */
+.detail i{margin-left:10px;}
+
+/* Content right */
+ #content .content-right .hot { border: 1px solid #a8a8a8;border-top:0;}
+ .content-right .hot .card-header {
+ 	padding: 6px;
+ 	color: #f8f8f8;
+ 	font-weight: 600;
+ 	background: #080808;
+ 	border-radius: 0;
+ }
+ .content-right .hot .card-body {
+ 	background:#f8f8f8;
+ 	padding:0.5rem 1rem;
+ 	height: 235px;
+ 	overflow: auto;
+ }
+ .content-right .hot .card-body p { margin-bottom: 3px; }
+ .content-right .hot .card-body a { 
+ 	margin-left: 5px; 
+ 	color:#660044;
+ 	text-decoration:none;
+ }
+ .content-right .hot .card-body p:hover { 
+	text-shadow: 4px 1px 2px rgba(150, 150, 150, 1);
+	transition: 0.3s all; 	
+ }
+ .content-right .hot .card-body i { 
+	color: red; 	
+ }
+
+/* Footer */
+#footer {
+	background: url('../image/tintuc_giaitri/footerbar.jpg') top no-repeat;
+	background-size: cover;
+	height: 200px;
+	margin-top: 1rem;
+	text-align: center;
+	padding-top: 0.8rem;
+	color: #dcdcdc;
+}
+
+/* scroll bar */
+#scoll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	background-color: #a8a8a8;
+}
+#scroll::-webkit-scrollbar-button
+{
+	background: #000;
+	border-radius: 10px;
+	height: 10px;
+}
+
+/* reponsive */
+	/* reponsive menu */
+	@media screen and ( max-width: 991px){
+		.container {padding:0 7px;}
+		#banner {
+			background-size: cover;
+			background-position: center top;
+			height: 100px;
+		}
+		#header nav {margin-top:-10px;padding:0;}
+		#header button {border:1px solid #484848;}
+		#header span{
+			color: #660033;
+		}
+		#header .navbar-brand {
+			width:120px;	
+			margin-left: 10px;
+		}
+		#top-menu ul li {padding-top:5px;}
+		#top-menu ul li .nav-link{
+			width: 100%;
+			text-align: left;
+			padding-left: 20%;
+			margin: 0 auto;
+		}
+		#top-menu ul li .dropdown-menu {
+			margin-left: 0px;
+			width: 90%;
+			margin: 2px auto 0;
+		}
+
+		.content-middle {padding-left:0!important;}
+		.tintuc .image-intro {
+			width: 100%;
+			height: auto;
+			margin: 0.5rem 0 1rem 0;
+			border: 0;
+		}
+		.tintuc .image-intro img {max-height:450px;}
+		.content-middle .middle-top {
+			padding: 1rem 0.5rem 1.3rem 0.5rem;
+		}
+		.tintuc h4{font-size:1.1rem;}
+
+	}
+	@media screen and (max-width:400px){
+		.tintuc .text-muted {font-size:0.9rem;font-weight:500;}
+		.tintuc .text-muted i {margin-left:7px;}
+	}

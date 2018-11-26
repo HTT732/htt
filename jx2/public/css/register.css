@@ -1,0 +1,50 @@
+body {
+	background-color: lightsteelblue;
+}
+.register {
+ 	background: url("../image/100.jpg") no-repeat;
+ 	background-size: 100% 100%;
+ 	margin-top: 2%;
+ }
+.register form {
+	padding: 7rem 0;
+}
+.register .form-group {
+	margin-bottom: 8px;
+	margin-left: 1rem;
+}
+.register .form-group input:focus {
+	border:  1px solid gold;
+	-webkit-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	-moz-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+}
+.register .form-group label {
+	font-weight: bold;
+	color: #5D2004;
+}
+.register button {
+	border: 2px solid #BA7F33;
+	color: #5D2004;
+	font-weight: bold;
+}
+.register button:hover {
+	background: #6D310D;
+	border: 2px solid #CC9447;
+	-webkit-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	-moz-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+}
+@media screen and (max-width: 450px){
+	.register {
+		background-size: cover;
+		background-position: center;
+		margin-top: -4rem;
+	}
+}
+@media screen and (max-width: 992px){
+	.register button{
+		background: #6D310D;
+		color: #dcdcdc;
+	}
+}

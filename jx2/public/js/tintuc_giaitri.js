@@ -1,0 +1,9 @@
+$(function(){
+	$("[data-toggle='popover']").popover({
+		placement:"left",
+		trigger:"focus"
+	})
+	$(".htt").click(function(){
+		$(this).fadeOut();
+	})
+})

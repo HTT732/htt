@@ -1,0 +1,436 @@
+* 	 {box-sizing: border-box;}
+body {background: lightsteelblue;}
+
+/*can chinh background*/
+@media screen and (max-width:919px){
+	.container {min-width:920px;}
+	.my-card {
+		background-size:cover!important;
+		background-position: center top;
+	}
+	.my-card .card-body #control {margin-top:8rem!important;height:6rem!important; }
+}
+@media screen and (min-width: 920px) and (max-width:991px){
+	.container {max-width:980px;}
+	.my-card {
+		background-size:cover!important;
+		background-position: center top;
+	}
+	.my-card .card-body #control {margin-top:8rem!important;height:6rem!important; }
+}
+@media screen and (min-width: 992px) and (max-width:1199px){
+	.container {max-width:990px;}
+	.my-card {
+		background-size:100% 100%!important;
+	}
+	.my-card .card-body #control {margin-top:7.5rem!important;}
+}
+@media screen and (min-width: 1650px){
+	.container {max-width:1268px;}
+	.my-card {
+		background-size:100% 100%!important;
+	}
+	/*.my-card .card-body #control {margin-top:13rem!important;}*/
+}
+
+/*End - can chinh background*/
+
+.my-card {
+	border:4px solid #0a1c2a;
+	border-top: 0;
+	/* overflow: hidden; */
+	background: url("../image/gif/background-xanh-fixheight.gif") center 35px no-repeat;
+	/* background: url("../image/gif/background-xanh.gif") center 35px no-repeat; */
+	/* background: url("../image/gif/background-ngau.gif") center 35px no-repeat; */
+	/* background: url("../image/gif/background-chao.gif") no-repeat; */
+	background-size: 100%;
+}
+
+.my-card .card-header {
+	background: url("../image/header.jpg") no-repeat;
+	background-size: 100% 100%;
+	border-radius: 0!important;
+	border: 0;
+	color: goldenrod;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 5px 0.5rem;
+}
+.my-card .card-header .btn-login {background: #00B2BF; color: #fff;}
+.my-card .card-header .btn-register {background: #3A2885; color: #dcdcdc; padding-left: 11px;padding-right:11px;}
+
+.my-card .card-body #control{
+	height:7rem; 
+	margin-top: 9rem; 
+	cursor: pointer;
+}
+.my-card .card-footer{
+	border: 0;
+	background: 0;
+	margin-bottom: 2px;
+}
+.card-footer .sub-control {
+	width: 2.8rem;
+	height: 2.8rem;
+	cursor: pointer;
+	transition: 0.3s all;
+	margin: 0 3px;
+}
+.card-footer .sub-control:hover {
+	width: 3.5rem;
+	height: 3.5rem;
+}
+.card-footer #info {
+	background: url("../image/face.png") no-repeat;
+}
+.card-footer #introduce {
+	/* background: url("../image/book4.png") bottom no-repeat; */
+	background: url("../image/nhiemvu.png") bottom no-repeat;
+}
+.card-footer #nhiemvu {
+	background: url("../image/sach2-sm.png") bottom no-repeat;
+}
+.card-footer #book {
+	background: url("../image/sach-smm.png") bottom no-repeat;
+}
+.card-footer #baiviet {
+	background: url("../image/ruongvang.png") bottom no-repeat;
+}
+.card-footer #info, 
+.card-footer #introduce,
+.card-footer #nhiemvu,
+.card-footer #book,
+.card-footer #baiviet {
+	background-size:  100%;
+	background-position: center center;
+}
+#nhom-chuc-nang {margin-top:-3.5rem;}
+#nhom-chuc-nang .card-body{padding: 1.5rem;}
+/* Thông tin hiển thị nội dung control */
+.card-control {
+	margin: 1rem 0 0 1rem;
+	position: absolute;
+	padding: 0;
+	border: 0;
+	display: none;
+	z-index: 20;
+}
+.card-control .card-header {
+	color: #03ab2e;
+	/* color: #db5800; */
+	font-weight: 400;
+}
+.card-control .card-body {
+	background: url("../image/background-control.jpg") no-repeat;
+	background-size:  100% 100%;
+	padding: 1rem;
+	font-size: 0.9rem;
+	overflow: auto;
+	color:  goldenrod;
+
+}
+#info-content .card-body {font-size: 1rem}
+.card-control .card-body .title {font-size: 1.2rem;}
+.card-control .card-body #avatar {
+	border: 2px solid #3A545B;
+	width: 7rem;
+	height: 7rem;
+	background-size: cover!important;
+}
+/* thông tin cá nhân */
+#show-info .form-group {
+	margin: 0.5rem 0;
+	font-weight: 400;
+}
+#edit-info .form-group input {
+	padding: 5px!important;
+}
+/*End - thông tin cá nhân */
+
+/* Bảng giao tiếp npc */
+.control-answer {
+	width:100%; 
+	border:0;
+	display:none;
+	font-size: 1rem;
+	position: absolute;
+	z-index: 10;
+	margin-top: 3rem;
+}
+.control-answer .card-title {
+	 background:#051723;
+	 padding:0.3rem 0.7rem; 
+	 margin:0; 
+	 color:#03ab2e;
+}
+.control-answer .card-body {
+	 background:url('../image/background-control.jpg') no-repeat;
+	 background-size: 100% 100%; 
+	 border:0;
+}
+.control-answer .card-body .divider {
+	/* color: red; */
+	height: 1px;
+	background: #3A545B;
+}
+.control-answer a {
+	color: goldenrod;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+.control-answer a, small {
+	transition: 0.2s all;
+}
+.control-answer a:hover {
+	color: #dcdcdc;
+}
+.control-answer small:hover {
+	color: #db5800;
+}
+/* End - Bảng giao tiếp npc */
+
+/* Tùy chỉnh scroll */
+#scroll::-webkit-scrollbar {
+	width: 0.8rem;
+}
+#scroll::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+#scroll::-webkit-scrollbar-thumb {
+	background: rgba(102,102,153,0.8);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+/* //Css modal logout */
+#logout .modal-header {
+	background: url("../image/header.jpg") no-repeat;
+	background-size: 100% 100%;
+	border: 0;
+}
+#logout .modal-footer {
+	background: url("../image/background-control.jpg") center center no-repeat;
+	background-size: cover;
+	border: 0;
+	color: black;
+}
+/* phần thông báo của hệ thống */
+.thongbao-background, .thongbao-show {
+	width:310px;
+	height:200px;
+	position:absolute; 
+	bottom:0;
+}
+.thongbao-background {
+	background:#818175;
+	opacity: 0.6;
+	z-index: 1;
+}
+.thongbao-show {
+	z-index: 2; 
+	color: red;
+	overflow: auto;
+	padding:3px 1rem;
+}
+/*End - phần thông báo của hệ thống */
+
+/* form login */
+ .login {
+	background: url("../image/3t.jpg") no-repeat;
+	background-size: 100% 100%;
+	height: auto;
+	padding: 10rem 0;
+	margin-top: 1%;
+	border:0;
+}
+
+.login .form-group {
+	border: 1px solid #DC983D;
+	border-radius: 5px;
+}
+.login .form-group input:focus {
+	border: 1px solid #DC983D;
+	-webkit-box-shadow: 2px 1px 14px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 1px 14px 4px rgba(0,0,0,0.75);
+	box-shadow: 2px 1px 14px 4px rgba(0,0,0,0.75);
+}
+.login input {
+	border: 1px solid #B06914;
+}
+.login #submit {
+	font-weight: bold;
+	width: 6.5rem;
+	height: 6.5rem;
+	border-radius: 3.5rem!important;
+	border: 2px solid #B06914;
+}
+.login #submit:hover {
+	border: 1px solid #A75A0F;
+	background: #A75A0F;
+	-webkit-box-shadow: 0px 0px 117px 12px rgba(77,68,49,0.77);
+	-moz-box-shadow: 0px 0px 117px 12px rgba(77,68,49,0.77);
+	box-shadow: 0px 0px 117px 12px rgba(77,68,49,0.77);
+}
+
+@media screen and (min-width: 1367px){
+	.login {
+		background-size: cover;
+		background-position: center;
+		padding: 14rem 0;
+		height: auto;
+	}
+	.login input {
+		padding: 1rem;
+	}
+	.login #submit {
+	font-weight: bold;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 3.5rem!important;
+	border: 2px solid #B06914;
+}
+}
+@media screen and (max-width: 500px){
+	.login {
+		background-size: cover;
+		background-position: center;
+		padding: 5.5rem 0;
+		height: auto;
+	}
+}
+ /* End form login */
+
+ /* form register */
+.register {
+ 	background: url("../image/100.jpg") no-repeat;
+ 	background-size: 100% 100%;
+ 	margin-top: 2%;
+ }
+.register form {
+	padding: 7rem 0;
+}
+.register .form-group {
+	margin-bottom: 8px;
+	margin-left: 1rem;
+}
+.register .form-group input:focus {
+	border:  1px solid gold;
+	-webkit-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	-moz-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+}
+.register .form-group label {
+	font-weight: bold;
+	color: #5D2004;
+}
+.register button {
+	border: 2px solid #BA7F33;
+	color: #5D2004;
+	font-weight: bold;
+}
+.register button:hover {
+	background: #6D310D;
+	border: 2px solid #CC9447;
+	-webkit-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	-moz-box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+	box-shadow: 0px 0px 36px 2px rgba(255,149,0,1);
+}
+@media screen and (max-width: 450px){
+	.register {
+		background-size: cover;
+		background-position: center;
+		margin-top: -4rem;
+	}
+}
+@media screen and (max-width: 992px){
+	.register button{
+		background: #6D310D;
+		color: #dcdcdc;
+	}
+}
+ /*End form register */
+
+ /* style quản lý bài viết */
+ .baiviet {
+ 	position: absolute;
+ 	margin-top: -2.7rem;
+ 	z-index: 100;
+ 	width: 100%;
+ 	border: 0;
+ 	display: none;
+ }
+ .baiviet .card-header { background:rgb(0,94,71);}
+ .baiviet .card-header a { padding: 5px 8px;}
+ .baiviet .card-header .active {background:rgb(238,235,240); border-bottom:0;}
+ .baiviet .card-body {
+ 	background: rgb(238, 235,240);
+ 	overflow: auto;
+ 	padding-top:0.7rem;
+ }
+ .baiviet .card-body .col{
+ 	padding:10px 10px 15px 10px;
+ }
+ .baiviet .card-body .col .card{
+ 	-webkit-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 7px 6px 5px 0px rgba(0,0,0,0.75);
+	border: 0;
+	height: 100%;
+	transition: .5s all;
+ }
+ .baiviet .card-body .col .card:hover{
+ 	-webkit-transform: scale(1.05, 1.05);
+ 	-moz-transform: scale(1.05, 1.05);
+ }
+ .baiviet .card-body .col img{
+ 	border: 2px solid #EE7C6B;
+	transition: .5s all;
+	height: 218px;
+ }
+ .baiviet .card-footer { background:rgb(0,94,71); margin: 0; }
+ /* End - khung quản lý bài viết */
+
+ /* Nội dung form bài viết */ 
+ .noidungbaiviet .card-body{
+ 	background: #EE7C6B;
+ 	padding: 1rem 0.9rem;
+ }
+ .noidungbaiviet .card-body .card-title a{
+ 	text-decoration: none;
+ 	color: blue;
+ }
+ .noidungbaiviet .card-body .view {
+	background:url('../image/icon/read.png') no-repeat;
+ }
+.noidungbaiviet .card-body .like {
+	background:url('../image/icon/like.png') no-repeat;
+ }
+.noidungbaiviet .card-body .view , .noidungbaiviet .card-body .like {
+	width:35px;
+	height:20px;
+	background-size-height:100%;
+}
+ .noidungbaiviet .card-footer button{
+	float: right;
+ }
+ /* End - Nội dung bài viết */
+
+/* Nội dung chi tiết bài viết */
+#detail .modal-footer {font-size:0.9rem;}
+#detail .modal-footer .like-footer {
+	background:url('../image/like.png') no-repeat;
+	background-size:100%; 
+	width:35px; 
+	height:35px;
+	cursor:pointer;
+	margin:0 5px;
+}
+/* End - Nội dung chi tiết bài viết */
+ /* Đăng bài viết */
+ .baiviet #dangbai { display: none; }
+ /*End - Đăng bài viết */
+
+
+
+
